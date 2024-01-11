@@ -1,0 +1,72 @@
+GET http://localhost:8080/personne
+
+###
+
+POST http://localhost:8080/personne
+Content-Type: application/json
+
+{
+  "nom": "Bentayfor",
+  "prenom": "Yassine",
+  "email": "yassine@gmail.com",
+  "role": "ADHERENT"
+}
+
+
+###
+DELETE http://localhost:8080/personne/2
+
+
+#### ADMIN
+
+GET http://localhost:8080/admin
+
+###
+
+POST http://localhost:8080/admin
+Content-Type: application/json
+
+{
+  "nom": "Aouzal",
+  "prenom": "Mohammed",
+  "email": "aouzal@gmail.com",
+  "role": "VALIDATEUR"
+}
+
+###
+DELETE http://localhost:8080/admin/2
+
+
+
+
+#### BLOG
+GET http://localhost:8080/blog
+
+###
+
+POST http://localhost:8080/blog
+Content-Type: application/json
+
+{
+  "nom": "BLOOOOG"
+}
+
+###
+DELETE http://localhost:8080/blog/3
+
+###
+POST http://localhost:8080/blog/1/personne/3
+
+
+
+####
+GET http://localhost:8080/billet
+
+###
+
+POST http://localhost:8080/billet/blog/4
+Content-Type: application/json
+
+{
+  "titre": "TIIIIITRE"
+}
